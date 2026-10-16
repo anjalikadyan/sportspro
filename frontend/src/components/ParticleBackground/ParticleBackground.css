@@ -1,0 +1,7 @@
+/* ParticleBackground.css */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}

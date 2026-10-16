@@ -1,0 +1,303 @@
+/* animations.css */
+/* Enhanced animations for sports management system */
+
+/* Scoreboard Animation */
+@keyframes scoreChange {
+    0% {
+        transform: scale(1);
+        color: white;
+    }
+
+    50% {
+        transform: scale(1.5);
+        color: #ff6b35;
+    }
+
+    100% {
+        transform: scale(1);
+        color: white;
+    }
+}
+
+.score-change {
+    animation: scoreChange 0.5s ease-in-out;
+}
+
+/* Trophy Shine Effect */
+@keyframes trophyShine {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(10deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.trophy-shine {
+    animation: trophyShine 2s ease-in-out infinite;
+}
+
+/* Field Lines Animation */
+@keyframes fieldLines {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.field-line {
+    animation: fieldLines 3s ease-in-out forwards;
+}
+
+/* Ball Bounce */
+@keyframes ballBounce {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+    }
+}
+
+.ball-bounce {
+    animation: ballBounce 1s ease-in-out infinite;
+}
+
+/* Countdown Timer */
+@keyframes countdownPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.countdown-pulse {
+    animation: countdownPulse 1s ease-in-out infinite;
+}
+
+/* Medal Animation */
+@keyframes medalSpin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.medal-spin {
+    animation: medalSpin 2s linear infinite;
+}
+
+/* Player Run Animation */
+@keyframes playerRun {
+    0% {
+        transform: translateX(-100px) translateY(0);
+    }
+
+    50% {
+        transform: translateX(0) translateY(-10px);
+    }
+
+    100% {
+        transform: translateX(100px) translateY(0);
+    }
+}
+
+.player-run {
+    animation: playerRun 3s linear infinite;
+}
+
+/* Net Swish (Basketball) */
+@keyframes netSwish {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(10deg);
+    }
+}
+
+.net-swish {
+    animation: netSwish 0.5s ease-in-out;
+}
+
+/* Cricket Ball Swing */
+@keyframes ballSwing {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(200px) rotate(360deg);
+    }
+}
+
+.ball-swing {
+    animation: ballSwing 1s linear infinite;
+}
+
+/* Team Celebration */
+@keyframes teamCelebrate {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-20px) rotate(-5deg);
+    }
+
+    75% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+.team-celebrate {
+    animation: teamCelebrate 0.5s ease-in-out infinite;
+}
+
+/* Scoreboard Flash */
+@keyframes scoreboardFlash {
+
+    0%,
+    100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgba(255, 107, 53, 0.2);
+    }
+}
+
+.scoreboard-flash {
+    animation: scoreboardFlash 1s ease-in-out;
+}
+
+/* Referee Whistle */
+@keyframes whistleBlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(10deg);
+    }
+}
+
+.whistle-blow {
+    animation: whistleBlow 0.2s ease-in-out 3;
+}
+
+/* Loading Spinner for Sports */
+@keyframes sportsSpinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sports-spinner {
+    animation: sportsSpinner 1s linear infinite;
+    border: 3px solid rgba(255, 107, 53, 0.3);
+    border-top-color: #ff6b35;
+    border-radius: 50%;
+}
+
+/* Victory Confetti */
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 20px;
+    opacity: 0;
+    animation: confettiFall 5s linear forwards;
+}
+
+/* Live Match Indicator */
+@keyframes livePulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.live-indicator {
+    animation: livePulse 1s ease-in-out infinite;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+/* Tournament Bracket Animation */
+@keyframes bracketLine {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.bracket-line {
+    animation: bracketLine 2s ease-in-out forwards;
+}
+
+/* Player Stats Bar Fill */
+@keyframes statFill {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--fill-percent);
+    }
+}
+
+.stat-bar {
+    animation: statFill 2s ease-out forwards;
+}

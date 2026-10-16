@@ -1,0 +1,20 @@
+/* CSS Variables for Sports Management System */
+:root {
+  --primary: #ff6b35;
+  --secondary: #00a8ff;
+  --dark: #0a192f;
+  --light: #f8f9fa;
+  --gray: #8d99ae;
+  --success: #2ecc71;
+  --orange-400: #fb923c;
+  --orange-500: #f97316;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --black: #000000;
+}

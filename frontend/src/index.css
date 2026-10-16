@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: 222 47% 8%;
+  --foreground: 210 40% 98%;
+  --card: 222 35% 12%;
+  --border: 217 24% 23%;
+  --muted: 217 24% 18%;
+  --muted-foreground: 215 20% 68%;
+  --primary: 24 95% 53%;
+  --secondary: 199 89% 48%;
+  --accent: 217 24% 18%;
+  --radius: 0.9rem;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --border: 214 32% 88%;
+  --muted: 210 40% 94%;
+  --muted-foreground: 215 16% 40%;
+  --primary: 24 95% 48%;
+  --secondary: 199 89% 38%;
+  --accent: 210 40% 94%;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; font-family: Inter, sans-serif; background: hsl(var(--background)); color: hsl(var(--foreground)); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { font-family: Manrope, sans-serif; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #38bdf8; outline-offset: 3px; }
+::selection { background: rgb(249 115 22 / .3); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+#root { min-height: 100vh; }
